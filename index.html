@@ -9,11 +9,40 @@
     <script src="./main.js" defer></script>
 </head>
 <body>
-    <div class="image-logo"></div>
+    <div class="image-logo">
+        <img src="https://cdn.contexttravel.com/image/upload/w_1500,q_60/v1571947279/blog/36%20Hours%20in%20NYC/NewYorkStreets.jpg" alt="People crossing NYC street">
+    </div>
     <div class="right-side">
         <div class="quote"></div>
-        <div class="sign-up"></div>
-        <div class="create-account"></div>
+        <div class="sign-up">
+            <div id="firstname-container">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+            <div id="lastname-container">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+            <div id="email-container">
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="email">
+            </div>
+            <div id="phone-number-container">
+                <label for="phone-number">Phone Number</label>
+                <input type="number" id="phone-number" name="phone-number">
+            </div>
+            <div id="password-container">
+                <label for="user-password">Password</label>
+                <input type="password" id="user-password" name="password">
+            </div>
+            <div id="confirm-password-container">
+                <label for="confirm-user-pword">Confirm Password</label>
+                <input type="password" id="confirm-user-pword" name="confirm-user-pword">
+            </div>
+        </div>
+        <div class="create-account">
+            <button type="submit">Create Account</button>
+        </div>
     </div>
 </body>
 </html>
