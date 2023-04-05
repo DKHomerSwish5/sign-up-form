@@ -1,15 +1,43 @@
 body{
     display:flex;
+    height: 100vh;
+    margin: 0;
 }
 .image-container{
+    border: solid blue 3px;
+    display:flex;
+    left:0;
     position:relative;
+    width: 45vw;
+}
+.right-side{
+    width: 55vw;
+    border: solid green 1px;
 }
 .NYC-Street{
-    border: solid red 3px;
-    z-index: 1;
+    border: solid red 1px;
+    width: 45vw;
+    z-index: 0;
+}
+.quote, .odin-quote, .sign-up, .create-account{
+    border: solid orange 1px;
+}
+input,label{
+    display:block;
+}
+div[id*=firstname],div[id*=email],div[id^="password"]{
+    float:left;
+    margin-right:50px;
+}
+.quote{
+    height:34%;
+}
+.sign-up, .create-account{
+     height: 33%;
 }
 .odin-logo-container{
     display:flex;
+    width:45vw;
     border: solid red 3px;
     opacity: 0.6;
     background: black;
@@ -17,7 +45,5 @@ body{
     font-size: 1.2em;
     font-family: roboto;
     position:absolute;
-    z-index: 2;
-    top: 25px;
-    left:80%;
+    z-index: 1;
 }
