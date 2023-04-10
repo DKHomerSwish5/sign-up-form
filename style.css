@@ -19,8 +19,20 @@ body{
     width: 45vw;
     z-index: 0;
 }
-.quote, .odin-quote, .sign-up, .create-account{
+.odin-logo-container{
+    height:17%;
+    justify-content: center;
+    top:35vh;
+}
+.quote, .odin-quote-container, .sign-up, .create-account{
     border: solid orange 1px;
+}
+.odin-quote-container{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-family: roboto;
+    font-weight: 400;
 }
 input,label{
     display:block;
@@ -42,8 +54,6 @@ div[id*=firstname],div[id*=email],div[id^="password"]{
     opacity: 0.6;
     background: black;
     color:white;
-    font-size: 1.2em;
-    font-family: roboto;
     position:absolute;
     z-index: 1;
 }
