@@ -19,12 +19,15 @@ body{
     width: 45vw;
     z-index: 0;
 }
+.space{
+    z-index:0;
+}
 .odin-logo-container{
     height:17%;
     justify-content: center;
     top:35vh;
 }
-.quote, .odin-quote-container, .sign-up, .create-account{
+.top-quote-container, .odin-quote-container, .sign-up, .create-account{
     border: solid orange 1px;
 }
 .odin-quote-container{
@@ -34,15 +37,32 @@ body{
     font-family: roboto;
     font-weight: 400;
 }
+.left-sign-up, .right-sign-up{
+    display: flex;
+    flex-direction: column;
+    border: solid red 3px;
+    justify-content: center;
+}
+.left-sign-up{
+    margin-right:9vw;
+    margin-left: 7vw;
+
+}
+.log-in-container{
+    display:flex;
+}
+.sign-up-container{
+    display: flex;
+}
 input,label{
     display:block;
 }
-div[id*=firstname],div[id*=email],div[id^="password"]{
-    float:left;
-    margin-right:50px;
-}
-.quote{
+.top-quote-container{
     height:34%;
+}
+.sign-up-quote{
+    border: solid red 3px;
+    text-align: center;
 }
 .sign-up, .create-account{
      height: 33%;
