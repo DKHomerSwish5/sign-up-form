@@ -10,6 +10,16 @@ body{
     position:relative;
     width: 45vw;
 }
+.top-quote-container-b{
+    align-content: center;
+    color: white;
+    z-index: 1;
+    border: solid yellowgreen 3px;
+    position: absolute;
+}
+.top-quote-container-a{
+    display: flex;
+}
 .right-side{
     width: 55vw;
     border: solid green 1px;
@@ -19,15 +29,19 @@ body{
     width: 45vw;
     z-index: 0;
 }
+
 .space{
+    height:34vh;
+    width:55vw;
     z-index:0;
+    position: relative;
 }
 .odin-logo-container{
     height:17%;
     justify-content: center;
     top:35vh;
 }
-.top-quote-container, .odin-quote-container, .sign-up, .create-account{
+.top-quote-container-a, .odin-quote-container, .sign-up, .create-account{
     border: solid orange 1px;
 }
 .odin-quote-container{
@@ -57,7 +71,7 @@ body{
 input,label{
     display:block;
 }
-.top-quote-container{
+.top-quote-container-a{
     height:34%;
 }
 .sign-up-quote{
