@@ -11,14 +11,19 @@ body{
     width: 45vw;
 }
 .top-quote-container-b{
-    align-content: center;
+    font-weight:600;
+    font-size: 30px;
+    white-space: initial;
     color: white;
+    width:55vw;
     z-index: 1;
-    border: solid yellowgreen 3px;
+    border: solid yellowgreen 1.5px;
     position: absolute;
 }
 .top-quote-container-a{
     display: flex;
+    position: relative;
+    height: 42vh;
 }
 .right-side{
     width: 55vw;
@@ -31,18 +36,31 @@ body{
 }
 
 .space{
-    height:34vh;
+    border: solid orange 1px;
+    height:42vh;
     width:55vw;
     z-index:0;
     position: relative;
+}
+
+.central-park{
+    height: 25vh;
+    width:55vw;
+    z-index: 0;
+    position: relative;
+}
+.sign-up-container{
+    position: absolute;
+    z-index: 1;
+    border: solid orange 2px;
 }
 .odin-logo-container{
     height:17%;
     justify-content: center;
     top:35vh;
 }
-.top-quote-container-a, .odin-quote-container, .sign-up, .create-account{
-    border: solid orange 1px;
+.top-quote-container-a, .odin-quote-container, .create-account{
+    border: solid orange 2px;
 }
 .odin-quote-container{
     display: flex;
@@ -65,21 +83,26 @@ body{
 .log-in-container{
     display:flex;
 }
-.sign-up-container{
+.input-container{
     display: flex;
 }
 input,label{
     display:block;
 }
 .top-quote-container-a{
-    height:34%;
+    height:42vh;
 }
 .sign-up-quote{
     border: solid red 3px;
     text-align: center;
 }
-.sign-up, .create-account{
-     height: 33%;
+.sign-up{
+    border: solid yellowgreen 3px;
+    height: 25vh;
+    position: relative;
+}
+.create-account{
+    height: 33vh;
 }
 .odin-logo-container{
     display:flex;
