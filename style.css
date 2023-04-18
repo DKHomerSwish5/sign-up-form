@@ -10,64 +10,71 @@ body{
     position:relative;
     width: 45vw;
 }
-.top-quote-container-b{
-    font-weight:600;
-    font-size: 30px;
-    white-space: initial;
-    color: white;
-    width:55vw;
-    z-index: 1;
-    border: solid yellowgreen 1.5px;
-    position: absolute;
-}
-.top-quote-container-a{
-    display: flex;
-    position: relative;
-    height: 42vh;
-}
-.right-side{
-    width: 55vw;
-    border: solid green 1px;
-}
 .NYC-Street{
     border: solid red 1px;
     width: 45vw;
     z-index: 0;
 }
-
-.space{
-    border: solid orange 1px;
-    height:42vh;
-    width:55vw;
-    z-index:0;
-    position: relative;
-}
-
-.central-park{
-    height: 25vh;
-    width:55vw;
-    z-index: 0;
-    position: relative;
-}
-.sign-up-container{
-    position: absolute;
+.box{
+    background-color: black;
+    opacity: 0.4;
+    width: 45vw;
+    position:absolute;
     z-index: 1;
-    border: solid orange 2px;
+    top:35vh;
+    height:17.5%;
 }
 .odin-logo-container{
     height:17%;
     justify-content: center;
     top:35vh;
-}
-.top-quote-container-a, .odin-quote-container, .create-account{
-    border: solid orange 2px;
+    display:flex;
+    width:45vw;
+    border: solid red 3px;
+    opacity: 0.9;
+    position:absolute;
+    z-index: 1;
 }
 .odin-quote-container{
     display: flex;
     align-items: center;
     font-size: 40px;
-    font-family: roboto;
+    color:white;
+    font-family: Helvetica;
     font-weight: 400;
+}
+.right-side{
+    display:flex;
+    font-family: Helvetica;
+    width: 55vw;
+    border: solid green 1px;
+    right: 0;
+    position: relative;
+}
+.subway{
+    border: solid orange 1px;
+    width:55vw;
+    z-index:0;
+}
+.top-quote-container{
+    top: 30px;
+    font-family: Helvetica;
+    font-weight:600;
+    font-size: 30px;
+    white-space: initial;
+    color: white;
+    background-color: black;
+    width:55vw;
+    z-index: 1;
+    border: solid yellowgreen 1.5px;
+    position: absolute;
+}
+.sign-up{
+    z-index: 1;
+    border: solid yellowgreen 1.5px;
+    position: absolute;
+    color: white;
+    top:50%;
 }
 .left-sign-up, .right-sign-up{
     display: flex;
@@ -78,7 +85,6 @@ body{
 .left-sign-up{
     margin-right:9vw;
     margin-left: 7vw;
-
 }
 .log-in-container{
     display:flex;
@@ -89,28 +95,21 @@ body{
 input,label{
     display:block;
 }
-.top-quote-container-a{
-    height:42vh;
-}
-.sign-up-quote{
-    border: solid red 3px;
-    text-align: center;
-}
-.sign-up{
-    border: solid yellowgreen 3px;
-    height: 25vh;
-    position: relative;
-}
 .create-account{
-    height: 33vh;
-}
-.odin-logo-container{
-    display:flex;
-    width:45vw;
-    border: solid red 3px;
-    opacity: 0.6;
-    background: black;
-    color:white;
-    position:absolute;
     z-index: 1;
+    border: solid yellowgreen 1.5px;
+    position: absolute;
+    color: white;
+    background-color: black;
+    bottom:50px;
+}
+button{
+    background-color: rgb(255, 166, 0);
+    border-radius: 10px;
+    padding: 0px 25px;      /*horizontal padding size*/
+    line-height: 2.5;       /*vertical size of button*/
+    font-size: 20px;        /*font size of sign up*/
+    font-weight: 600;
+    text-align: center;     /*centers text*/
+    color: white;       /*button text color*/
 }
