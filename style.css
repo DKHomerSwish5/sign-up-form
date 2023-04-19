@@ -10,7 +10,7 @@ body{
     position:relative;
     width: 45vw;
 }
-.NYC-Street{
+.subway{
     border: solid red 1px;
     width: 45vw;
     z-index: 0;
@@ -51,30 +51,32 @@ body{
     right: 0;
     position: relative;
 }
-.subway{
-    border: solid orange 1px;
-    width:55vw;
-    z-index:0;
-}
 .top-quote-container{
     top: 30px;
+    padding:20px;
     font-family: Helvetica;
     font-weight:600;
     font-size: 30px;
     white-space: initial;
     color: white;
     background-color: black;
-    width:55vw;
+    width:auto;
     z-index: 1;
     border: solid yellowgreen 1.5px;
     position: absolute;
 }
 .sign-up{
+    width:54vw;
     z-index: 1;
+    font-weight:300;
+    font-size: 30px;
     border: solid yellowgreen 1.5px;
     position: absolute;
-    color: white;
-    top:50%;
+    color: black;
+    top:33%;
+}
+.sign-up-quote{
+    text-align: center;
 }
 .left-sign-up, .right-sign-up{
     display: flex;
@@ -101,7 +103,7 @@ input,label{
     position: absolute;
     color: white;
     background-color: black;
-    bottom:50px;
+    bottom:20vh;;
 }
 button{
     background-color: rgb(255, 166, 0);
