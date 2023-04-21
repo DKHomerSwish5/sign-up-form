@@ -1,17 +1,18 @@
 body{
     display:flex;
     height: 100vh;
+    width:100vw;
     margin: 0;
 }
 .image-container{
-    border: solid blue 3px;
+    /*border: solid blue 3px;*/
     display:flex;
     left:0;
     position:relative;
     width: 45vw;
 }
 .subway{
-    border: solid red 1px;
+    /*border: solid red 1px;*/
     width: 45vw;
     z-index: 0;
 }
@@ -22,15 +23,15 @@ body{
     position:absolute;
     z-index: 1;
     top:35vh;
-    height:17.5%;
+    height:17%;
 }
 .odin-logo-container{
     height:17%;
     justify-content: center;
     top:35vh;
     display:flex;
-    width:45vw;
-    border: solid red 3px;
+    width:100%;
+    /*border: solid red 3px;*/
     opacity: 0.9;
     position:absolute;
     z-index: 1;
@@ -45,35 +46,33 @@ body{
 }
 .right-side{
     display:flex;
+    flex-direction: column;
     font-family: Helvetica;
-    width: 55vw;
-    border: solid green 1px;
+    /*width: 55vw;*/
+    /*border: solid green 1px;*/
     right: 0;
     position: relative;
+
 }
 .top-quote-container{
+    display: flex;
+    align-items: center;
     height:28vh;
-    padding:20px;
     font-family: Helvetica;
-    font-weight:600;
-    font-size: 30px;
+    font-size: 25px;
     white-space: initial;
     color: black;
     background-color: rgb(230, 230, 230);
     width:55vw;
-    z-index: 1;
     border: solid yellowgreen 1.5px;
-    position: absolute;
 }
-.sign-up{
+.sign-up-container{
     width:55vw;
-    z-index: 1;
     font-weight:300;
     font-size: 30px;
-    border: solid yellowgreen 1.5px;
-    position: absolute;
+    /*border: solid yellowgreen 1.5px;*/
+    /*position: absolute;*/
     color: black;
-    top: 33%;
     height:34vh;
 }
 .sign-up-quote{
@@ -101,12 +100,15 @@ input,label{
 .create-account{
     z-index: 1;
     width:55vw;
-    border: solid yellowgreen 1.5px;
-    position: absolute;
+    /*border: solid yellowgreen 1.5px;*/
+    /*position: absolute;*/
     color: black;
     height: 38vh;
     bottom:0;
     background-color: rgb(230, 230, 230);
+}
+.create-account-button{
+
 }
 button{
     background-color: rgb(255, 166, 0);
