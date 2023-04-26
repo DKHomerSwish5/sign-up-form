@@ -66,20 +66,26 @@ body{
     width:55vw;
     border: solid yellowgreen 1.5px;
 }
+.top-quote{
+    margin-top: 10%;
+    margin-left: 5%;
+}
 .sign-up-container{
     width:55vw;
     font-weight:300;
-    font-size: 30px;
+    font-size: 25px;
     /*border: solid yellowgreen 1.5px;*/
     /*position: absolute;*/
     color: black;
     height:34vh;
 }
 .sign-up-quote{
+    margin-top: 2.5%;
     text-align: center;
 }
 .input-container{
     display: flex;
+    margin-left:4%;
 }
 .left-sign-up, .right-sign-up{
     display: flex;
@@ -107,10 +113,19 @@ input,label{
     bottom:0;
     background-color: rgb(230, 230, 230);
 }
-.create-account-button{
-
+.log-in-container{
+    margin-top: 25px;
+    margin-left:35px;
+    font-weight:300;
+    font-size: 25px;
+}
+a{
+    color:orange;
+    text-decoration: none;
 }
 button{
+    margin-top:30px;
+    margin-left:35px;
     background-color: rgb(255, 166, 0);
     border-radius: 10px;
     padding: 0px 25px;      /*horizontal padding size*/
