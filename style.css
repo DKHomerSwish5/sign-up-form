@@ -5,14 +5,12 @@ body{
     margin: 0;
 }
 .image-container{
-    /*border: solid blue 3px;*/
     display:flex;
     left:0;
     position:relative;
     width: 45vw;
 }
 .subway{
-    /*border: solid red 1px;*/
     width: 45vw;
     z-index: 0;
 }
@@ -31,7 +29,6 @@ body{
     top:35vh;
     display:flex;
     width:100%;
-    /*border: solid red 3px;*/
     opacity: 0.9;
     position:absolute;
     z-index: 1;
@@ -48,8 +45,6 @@ body{
     display:flex;
     flex-direction: column;
     font-family: Helvetica;
-    /*width: 55vw;*/
-    /*border: solid green 1px;*/
     right: 0;
     position: relative;
 
@@ -64,7 +59,6 @@ body{
     color: black;
     background-color: rgb(230, 230, 230);
     width:55vw;
-    border: solid yellowgreen 1.5px;
 }
 .top-quote{
     margin-top: 10%;
@@ -74,28 +68,24 @@ body{
     width:55vw;
     font-weight:300;
     font-size: 25px;
-    /*border: solid yellowgreen 1.5px;*/
-    /*position: absolute;*/
     color: black;
-    height:34vh;
+    height:42vh;
 }
 .sign-up-quote{
     margin-top: 2.5%;
-    text-align: center;
+    margin-left: 5%;
 }
 .input-container{
     display: flex;
-    margin-left:4%;
+    margin-top:5%;
+    margin-left:5%;
 }
 .left-sign-up, .right-sign-up{
     display: flex;
     flex-direction: column;
-    border: solid red 3px;
-    justify-content: center;
 }
 .left-sign-up{
-    margin-right:9vw;
-    margin-left: 7vw;
+    margin-right:5%;
 }
 .log-in-container{
     display:flex;
@@ -104,18 +94,15 @@ input,label{
     display:block;
 }
 .create-account{
-    z-index: 1;
     width:55vw;
-    /*border: solid yellowgreen 1.5px;*/
-    /*position: absolute;*/
     color: black;
-    height: 38vh;
+    height: 30vh;
     bottom:0;
     background-color: rgb(230, 230, 230);
 }
 .log-in-container{
-    margin-top: 25px;
-    margin-left:35px;
+    margin-top: 4%;
+    margin-left:5%;
     font-weight:300;
     font-size: 25px;
 }
@@ -125,7 +112,7 @@ a{
 }
 button{
     margin-top:30px;
-    margin-left:35px;
+    margin-left:5%;
     background-color: rgb(255, 166, 0);
     border-radius: 10px;
     padding: 0px 25px;      /*horizontal padding size*/
