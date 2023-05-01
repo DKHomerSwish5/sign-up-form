@@ -80,6 +80,11 @@ body{
     margin-top:5%;
     margin-left:5%;
 }
+input{
+    width:250px;
+    height: 17px;
+    border-radius: 5px;
+}
 [id$="-container"]{
     margin-bottom:7%;
     font-size: 21px;
