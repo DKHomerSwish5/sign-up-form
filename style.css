@@ -82,11 +82,17 @@ body{
 }
 input{
     width:250px;
-    height: 17px;
+    height: 18px;
+    border: 2px solid rgb(206, 206, 206);
     border-radius: 5px;
 }
+input:focus{
+    outline: none;
+    border: 2px solid rgb(255, 185, 56);
+    box-shadow: 3px 3px 3px grey;
+}
 [id$="-container"]{
-    margin-bottom:7%;
+    margin-bottom:10%;
     font-size: 21px;
 }
 .left-sign-up, .right-sign-up{
