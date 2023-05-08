@@ -1,31 +1,65 @@
-let firstName = document.querySelector('[id^="firstname"]');
-let lastName = document.querySelector('[id^="lastname"]');
-let email = document.querySelector('[id^="email"]');
-let phoneNumber = document.querySelector('[id^="phone-number"]');
-let password = document.querySelector('[id^="password"]');
-let cPassword = document.querySelector('[id^="confirm"]');
-let myBtn = document.querySelector('[button$="button"]');
+let firstName = document.getElementById("firstname");
+let lastName = document.getElementById("lastname");
+let email = document.getElementById("user-email");
+let phoneNumber = document.getElementById("phone-number");
+let password = document.getElementById("user-password");
+let cPassword = document.getElementById("confirm-user-pword");
+let myBtn = document.querySelector(".create-account-button");
+let form = document.querySelector(".sign-up-container");
 let firstNameInput;
 let lastNameInput;
-myBtn.addEventListener('click',buttonClick);
-function buttonClick(){
-    
-}
+let numberInput;
+let emailInput;
+let passwordInput;
+let cPasswordInput;
+
+
 firstName.addEventListener('input',updateFirstName);
-email.addEventListener('input',validEmailEntry)
+lastName.addEventListener('input',updateLastName);
+email.addEventListener('input',updateEmail);
+phoneNumber.addEventListener('input',updateNumber);
+password.addEventListener('input',passwordUpdate);
+cPassword.addEventListener('input',cPasswordUpdate);
+myBtn.addEventListener('click',submitForm);
+
+function submitForm(){
+    cPasswordUpdate();
+    if(cPassword.validationMessage=="Passwords do not match"){
+        return
+    }
+    form.submit();
+}
 function updateFirstName(){
     firstNameInput = firstName.value;
 }
 function updateLastName(){
     lastNameInput = lastName.value;
 }
-function validEmailEntry(emailInput){
-    let emailCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-
-    if(emailCheck.test(emailInput)){
-        return true;
+function updateEmail(){
+    emailInput = email.value;
+}
+function updateNumber(){
+    numberInput = phoneNumber.value;
+    numValidity();
+}
+function passwordUpdate(){
+    passwordInput = password.value;
+}
+function cPasswordUpdate(){
+    cPasswordInput = cPassword.value;
+    if(passwordInput===cPasswordInput){
+        cPassword.setCustomValidity("");
+        return
     }
     else{
-        return "Please enter a valid email address";
+        cPassword.setCustomValidity("Passwords do not match");
+        cPassword.reportValidity();
     }
 }
+
+  
+  
+  
+  
+  
+  
