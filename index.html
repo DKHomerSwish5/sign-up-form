@@ -25,47 +25,45 @@
                                    <br>Sign up <em>now</em> to experience what NYC has to offer.
             </div>
         </div>
-        <form class="sign-up-container" action="index.html" method="post">
+        <form class="sign-up-container" id=input-form action="index.html" method="post">
             <div class="sign-up-quote">Will you make your dreams a reality?</div>
             <div class="input-container">
                 <div class="left-sign-up">
                     <div id="firstname-container">
                         <label for="firstname">First Name</label>
                         <input type="text" name="firstname" id="firstname" required>
-                        <div id="f-name-error"></div>
                     </div>
                     <div id="email-container">
                         <label for="user-email">Email</label>
                         <input type="email" id="user-email" name="email" required>
-                        <div id="email-error"></div>
                     </div>
                     <div id="password-container">
                         <label for="user-password">Password</label>
-                        <input type="password" id="user-password" name="password" required>
-                        <div id="pword-error"></div>
+                        <input type="password" id="user-password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                         oninvalid="this.setCustomValidity('Requires one upper and lower character, one number, and at least 8 characters')"
+                         oninput="this.setCustomValidity('')"required>
                     </div>
                 </div>
                 <div class="right-sign-up">
                     <div id="lastname-container">
                         <label for="lastname">Last Name</label>
                         <input type="text" name="lastname" id="lastname" required>
-                        <div id="l-name-error"></div>
                     </div>
                     <div id="phone-number-container">
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                        <div id="number-error"></div>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                        oninvalid="this.setCustomValidity('Enter the number in XXX-XXX-XXXX format')"
+                        oninput="this.setCustomValidity('')" required>
                     </div>
                     <div id="confirm-password-container">
                         <label for="confirm-user-pword">Confirm Password</label>
                         <input type="password" id="confirm-user-pword" name="confirm-user-pword" required>
-                        <div id="c-password-error"></div>
                     </div>
                 </div>
             </div>
         </form>
         <div class="create-account">
-            <button class="create-account-button" type="submit">Create Account</button>
+            <button class="create-account-button" type="submit" form="input-form">Create Account</button>
             <div class="log-in-container">
                 <div class="log-in-text">Already have an account? <a href="https://dkhomerswish5.github.io/sign-up-form/">Log In</a></div>
             </div>
