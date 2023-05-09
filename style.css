@@ -41,6 +41,20 @@ body{
     font-family: Helvetica;
     font-weight: 400;
 }
+.unsplash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0.4;
+    font-size:13px;
+    font-weight: 250;
+    font-family: Helvetica;
+    position:absolute;
+    z-index: 1;
+    top:95%;
+    margin-left:27vw;
+}
 .right-side{
     display:flex;
     flex-direction: column;
